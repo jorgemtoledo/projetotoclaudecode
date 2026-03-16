@@ -26,6 +26,27 @@ Brazilian stock market analysis dashboard (PETR4, ITUB4, VALE3) built with Strea
 
 **Data shape:** `fetcher.py` flattens MultiIndex columns from yfinance downloads. `indicators.py` appends columns to the same DataFrame. Each ticker's data is stored and processed independently.
 
+## GitHub Repository
+
+**Repositório:** https://github.com/jorgemtoledo/projetotoclaudecode
+
+**Auto-sync está configurado:** toda vez que Claude edita um arquivo, um commit e push são feitos automaticamente via hook `PostToolUse` em `~/.claude/settings.json`.
+
+Para sincronizar mudanças manuais (fora do Claude Code), rode em um terminal separado:
+
+```bash
+./auto_sync.sh
+```
+
+Esse script verifica mudanças a cada 30 segundos e faz commit+push automaticamente.
+
+**Comandos git úteis:**
+```bash
+git status          # ver mudanças pendentes
+git log --oneline   # ver histórico de commits
+git push origin main  # push manual se necessário
+```
+
 ## Tab Layout (app.py)
 
 | Tab | Content |
